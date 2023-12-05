@@ -91,7 +91,7 @@
       // at this point it is safe to assume that the values are truthy
       login(em, pw).then(async (res) => {
         if (res?.token) {
-          window.location.href = '/';
+          window.location.href = '/dashboard';
         }
       })
       .catch(err => {

@@ -89,7 +89,7 @@ import { getErrMsg } from '~/utils/getErrMsg';
     await form.value!.validate();
     loading.value = true;
     await signUp(state.value.email, state.value.password).then(() => {
-      window.location.href = '/';
+      window.location.href = '/dashboard';
     }).catch(err => {
       errorMessage.value = getErrMsg(err)
     }).finally(() => {
