@@ -88,7 +88,11 @@
   updateProjectIdFromParams();
 
   function onLogoClick() {
-    navigateTo('/');
+    if (user.value) {
+      navigateTo('/dashboard');
+    } else {
+      navigateTo('/');
+    }
   }
 
   const projectMenu = computed(() => {

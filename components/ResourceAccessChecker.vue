@@ -17,7 +17,7 @@
       icon: 'i-heroicons-exclamation-triangle',
     });
 
-    navigateTo('/', { redirectCode: 302 });
+    navigateTo('/dashboard', { redirectCode: 302 });
   }
 
   if (params.observationId && project.value?.id) {
@@ -32,7 +32,7 @@
         icon: 'i-heroicons-exclamation-triangle',
       });
 
-      navigateTo('/', { redirectCode: 302 });
+      navigateTo('/dashboard', { redirectCode: 302 });
     }
   } else if (params.observationId && !project.value) {
       toast.add({
@@ -42,7 +42,7 @@
         icon: 'i-heroicons-exclamation-triangle',
       });
 
-      navigateTo('/', { redirectCode: 302 });
+      navigateTo('/dashboard', { redirectCode: 302 });
   }
 
 </script>

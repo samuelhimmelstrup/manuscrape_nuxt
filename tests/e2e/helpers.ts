@@ -286,7 +286,7 @@ export async function openSignUpPage(): Promise<Response> {
 }
 
 export async function openIndexPage(): Promise<Response> {
-  const res = await fetch('/', { redirect: 'manual' });
+  const res = await fetch('/dashboard', { redirect: 'manual' });
   return res;
 }
 

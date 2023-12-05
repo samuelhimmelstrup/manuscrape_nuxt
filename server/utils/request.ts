@@ -2,7 +2,7 @@ import type { H3Event } from 'h3';
 
 export function isOpenUrl (event: H3Event): boolean {
     const openPostUrls = ['/api/user', '/api/auth', '/api/token_auth'];
-    const openGetUrls = ['/user/new', '/login'];
+    const openGetUrls = ['/', '/user/new', '/login'];
     const isPostRequest = event.req.method === 'POST';
     const isGetRequest = event.req.method === 'GET';
     const isOpenUrl = (
